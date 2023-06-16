@@ -69,6 +69,8 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Specify work directory
 WORKDIR /var/www/html
 
+RUN chown -R www-data:www-data /var/www/html
+
 # Expose port 80
 EXPOSE 80
 
