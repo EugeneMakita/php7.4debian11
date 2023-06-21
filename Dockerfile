@@ -17,6 +17,7 @@ RUN apt-get update \
     locales \
     mariadb-server
 
+
 # Add PHP 7.4 repository
 RUN wget https://packages.sury.org/php/apt.gpg \
     && apt-key add apt.gpg \
