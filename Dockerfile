@@ -21,7 +21,7 @@ RUN apt-get update \
 # Add PHP 7.4 repository
 RUN wget https://packages.sury.org/php/apt.gpg \
     && apt-key add apt.gpg \
-    && echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php7.1.list \
+    && echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php7.4.list \
     && apt-get update
 
 # Setting up locales
